@@ -1,0 +1,11 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 400px;
+    background-color: rgb(209, 150, 225);
+}
+h1 {
+    font-family: fantasy;
+    text-align: left;
+}
