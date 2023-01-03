@@ -17,54 +17,54 @@ HTML, CSS, and JavaScript
 As a User, I want to be able to...
 
 ### Version 1:
-    - See my score 
-    - Be able to match cards together
-    - Game tells me when I've made a match
-    - Game tells me if I win
+    - See my score
+    - Flip one card at a time and see a character
+    - Click a second card and see a character
+    - See an alert when a match is made
+    - See an alert that I've won if matched all cards
 ### Version 2:
-    - Match different cards
+    - Select new pair of cards if last two did match
+    - See alert when pair does not match
     - See my timer
-    - Want to see when I mismatch
 ### Version 3:
-    - Play against someone else
-    - Make more matches than two image set
-    
+    - Timer go out
+    - Reset game
+
 ## Psuedocode
-
-- document and add event listener.
-
-- start with an array, with each card and img link.
-
-- put in randomization.
-
-- start with a grid display.
-
-- create grid function to show gameboard.
-
-- append.
-
-- then create function for checking matches, using a for let loop.
-
-- create alert with message, "You found a match!".
-
-- set blank color and back side color of cards.
-
-- push cards won.
-
-- if no cards match and won, then alert, "Sorry, try again.".
-
-- else if all cards are matched, then alert, "Congratulations! You found them all!".
-
-- add the flip your card function.
-
-- add a get attribute to function.
-
-- add push to cards picked out.
-
-- add push to cards result id.
-
-- set the attribute.
-
-- set a timeout to 500.
-
-- lastly, initialize the functions with createBoard()
+### V1
+* See my score
+    - Show score at the top, uses results to show
+    
+* Flip one card at a time and see a character
+    - Click function on each card
+    - Click cards one at a time
+    - See character on other side 
+    
+* Click a second card and see a character
+     - Click on second card
+     - If card does not match, both cards flip back over
+     - Else if cards match, turn blank/white
+     - Added to score
+     
+* See an alert when a match is made
+    - Alert 'You found a match!' when match is made
+* See an alert that I've won if matched all cards
+    - Alert 'Congratulations! You found them all!'
+    
+### V2
+* Select new pair of cards if last two did match
+    - If last two did not match, flip back over to green/gameboard
+    - Alert 'Sorry, try again.'
+    - Click function starts new set
+    - If matched, flip to white/blank
+    
+* See my timer
+    - Timer is set to 500
+    
+### V3    
+* Timer go out
+    - If timer goes out before all matches made, then game over
+    - If all matches made before timer goes out, game won
+    
+* Reset game
+    - Game resets when browser is refreshed
