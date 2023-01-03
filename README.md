@@ -68,3 +68,5 @@ As a User, I want to be able to...
     
 * Reset game
     - Game resets when browser is refreshed
+
+  
