@@ -1,8 +1,16 @@
-![Memory Game](https://media.git.generalassemb.ly/user/46970/files/3e389392-0ef1-4052-bd9b-3731201d4514)
 # Memory Game
-## Technologies Used:
+In this game, there is a four by three circle grid box. Each circle has another that matches it. Each player must flip over two cards in hopes that they will match, if they don't then it is the next player's turn. Whoever matches the most cards wins. 
+## In this README.md you will find...
+    - Wireframe
+    - Technologies Used
+    - User Stories
+    - Psuedocode
 
-HTML, CSS, JavaScript
+## Wireframe
+![Memory Game (1)](https://user-images.githubusercontent.com/113128158/210400440-7866ca0c-4f11-4dc3-b226-aa5808421e5d.jpg)
+
+## Technologies Used
+HTML, CSS, and JavaScript
 
 ## User Stories
 
