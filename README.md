@@ -59,4 +59,4 @@ As a User, I want to be able to...
 
 - set a timeout to 500.
 
-- lastly, call the functions with createBoard()
+- lastly, initialize the functions with createBoard()
