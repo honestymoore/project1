@@ -1,0 +1,46 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 400px;
+    margin: 0 auto;
+    border: 10px solid rgb(170, 36, 36);
+    background-color: rgb(170, 36, 36);
+    
+}
+h1 {
+    font-family: fantasy;
+    text-align: center;
+    background-color: rgb(170, 36, 36);
+    word-spacing: 20px;
+    letter-spacing: 15px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+h3 {
+    background-color: rgb(170, 36, 36);
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: x-small;
+}
+button {
+    background-color: rgb(170, 36, 36);
+    font-size: x-large;
+    border: 8px solid rgb(170, 36, 36);
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 100px;
+    margin-left: 20px;
+}
