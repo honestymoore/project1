@@ -1,70 +1,70 @@
 document.addEventListener('DOMContentLoaded', () => {
    
-    //card options
+        //the card options
         const cardArray = [
             {
-                name: 'eevee',
-                img: '133.png'
+                name: 'naruto',
+                img: 'images/naruto.jpg'
             },
             {
-                name: 'ditto',
-                img: '132.png'
+                name: 'kid naruto',
+                img: 'images/kidnaruto.webp'
             },
             {
-                name: 'pikachu',
-                img: 'pikachu.png'
+                name: 'sage naruto',
+                img: 'images/sagenaruto.webp'
             },
             {
-                name: 'cubone',
-                img: 'cubone.png'
+                name: 'sasuke',
+                img: 'images/sasuke.png'
             },
             {
-                name: 'eevee',
-                img: '133.png'
+                name: 'sasuke1',
+                img: 'images/sasuke1.jpeg'
             },
             {
-                name: 'ditto',
-                img: '132.png'
+                name: 'kid sasuke',
+                img: 'images/kidsasuke.jpg'
             },
             {
-                name: 'pikachu',
-                img: 'pikachu.png'
+                name: 'naruto',
+                img: 'images/naruto.jpg'
             },
             {
-                name: 'cubone',
-                img: 'cubone.png'
+                name: 'kid naruto',
+                img: 'images/kidnaruto.webp'
             },
             {
-                name: 'eevee',
-                img: '133.png'
+                name: 'sage naruto',
+                img: 'images/sagenaruto.webp'
             },
             {
-                name: 'ditto',
-                img: '132.png'
+                name: 'sasuke',
+                img: 'images/sasuke.png'
             },
             {
-                name: 'pikachu',
-                img: 'pikachu.png'
+                name: 'sasuke1',
+                img: 'images/sasuke1.jpeg'
             },
             {
-                name: 'cubone',
-                img: 'cubone.png'
+                name: 'kid sasuke',
+                img: 'images/kidsasuke.jpg'
             }
         ]
-
+    //randomization
     cardArray.sort(() => 0.5 - Math.random()) 
     
     const grid = document.querySelector('.grid')
     const resultDisplay = document.querySelector('#result')
-    let cardsChosen = []
-    let cardsChosenId = []
+    let cardsPicked = []
+    let cardsPickedId = []
     let cardsWon = []
     
-    //gameboard
+    //gameboard with flipCard function
     function createBoard() {
         for (let i = 0; i < cardArray.length; i++) {
             const card = document.createElement('img')
-            card.setAttribute('src', 'images/blank.jpg')
+            card.setAttribute('src', 'images/frontcard.png')
             card.setAttribute('data-id', i)
             card.addEventListener('click', flipCard)
             grid.appendChild(card)
@@ -74,44 +74,41 @@ document.addEventListener('DOMContentLoaded', () => {
     //check matches
     function checkForMatch() {
         const cards = document.querySelectorAll('img')
-        const optionOneId = cardsChosenId[0]
-        const optionTwoId = cardsChosenId[1]
-
-        if(optionOneId == optionTwoId) {
-            cards[optionOneId].setAttribute('src', 'images/blank.jpg')
-            cards[optionTwoId].setAttribute('src', 'images/blank.jpg')
-            //alert('Clicked the same image!')
-
-        } else if (cardsChosen[0] === cardsChosen[1]) {
-            // alert('You found a match!')
+        const optionOneId = cardsPickedId[0]
+        const optionTwoId = cardsPickedId[1]
+        //make a match
+        if (cardsPicked[0] === cardsPicked[1]) {
+            window.alert('Nice job! Not much left to go!')
             cards[optionOneId].setAttribute('src', 'images/white.png')
             cards[optionTwoId].setAttribute('src', 'images/white.png')
             cards[optionOneId].removeEventListener('click', flipCard)
             cards[optionTwoId].removeEventListener('click', flipCard)
-            cardsWon.push(cardsChosen)
+            cardsWon.push(cardsPicked)
+        //no match made
         } else {
-            cards[optionOneId].setAttribute('src', 'images/blank.jpg')
-            cards[optionTwoId].setAttribute('src', 'images/blank.jpg')
-            // alert('Sorry, try again.')
+            cards[optionOneId].setAttribute('src', 'images/frontcard.png')
+            cards[optionTwoId].setAttribute('src', 'images/frontcard.png')
         }
-        cardsChosen = []
-        cardsChosenId = []
+        //all matches made
+        cardsPicked = []
+        cardsPickedId = []
         resultDisplay.textContent = cardsWon.length
         if (cardsWon.length === cardArray.length/2) {
-        resultDisplay.textContent = 'Congratulations! You found them all!'
+        resultDisplay.textContent = 'Well done, young shinobi!'
         }
     } 
-    
-    //flip your card
+   
+    //flipping cards
     function flipCard() {
-        var cardId = this.getAttribute('data-id')
-        cardsChosen.push(cardArray[cardId].name)
-        cardsChosenId.push(cardId)
+        const cardId = this.getAttribute('data-id')
+        cardsPicked.push(cardArray[cardId].name)
+        cardsPickedId.push(cardId)
         this.setAttribute('src', cardArray[cardId].img)
-        if (cardsChosen.length === 2) {
-            setTimeout(checkForMatch, 500)
+        if (cardsPicked.length ===2) {
+            setTimeout(checkForMatch, 300)
         }
     }
-    
+    //initialize
     createBoard()
+
 })
