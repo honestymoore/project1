@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             cards[optionOneId].setAttribute('src', 'images/frontcard.png')
             cards[optionTwoId].setAttribute('src', 'images/frontcard.png')
-            //window.alert('No match! Follow your ninja way!')
+            window.alert('No match! Follow your ninja way!')
         }
         //all matches made
         cardsPicked = []
@@ -114,9 +114,19 @@ document.addEventListener('DOMContentLoaded', () => {
     createBoard()
 
     //Timer
-    // const seconds = 60
-    // function setInterval(() => {
-        
-    // }, interval);
+//     var seconds = 60
+//     var timer
+//     function myFunction() {
+//     if(seconds < 60) {
+//         document.getElementById("timer").innerHTML = seconds
+//     }
+//     if (seconds >0 ) { //so it doesn't go to -1
+//         seconds--
+//     } else {
+//      clearInterval(timer)
+//     }
+// }
+
+// document.getElementById("timer").innerHTML="1:00";
 
 })
