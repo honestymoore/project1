@@ -52,8 +52,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         ]
     //randomization
-    cardArray.sort(() => 0.5 - Math.random()) 
-    
+    cardArray.sort(() => 0.5 - Math.random())
+
+    //selectors
     const grid = document.querySelector('.grid')
     const resultDisplay = document.querySelector('#result')
     let cardsPicked = []
@@ -78,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const optionTwoId = cardsPickedId[1]
         //make a match
         if (cardsPicked[0] === cardsPicked[1]) {
-            window.alert('Nice job! Not much left to go!')
+            window.alert('Nice job! Keep going and you will be the next Hokage!')
             cards[optionOneId].setAttribute('src', 'images/white.png')
             cards[optionTwoId].setAttribute('src', 'images/white.png')
             cards[optionOneId].removeEventListener('click', flipCard)
@@ -88,6 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             cards[optionOneId].setAttribute('src', 'images/frontcard.png')
             cards[optionTwoId].setAttribute('src', 'images/frontcard.png')
+            window.alert('No match! Follow your ninja way!')
         }
         //all matches made
         cardsPicked = []
@@ -110,5 +112,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     //initialize
     createBoard()
+
+    //Timer
+//     var seconds = 60
+//     var timer
+//     function myFunction() {
+//     if(seconds < 60) {
+//         document.getElementById("timer").innerHTML = seconds
+//     }
+//     if (seconds >0 ) { //so it doesn't go to -1
+//         seconds--
+//     } else {
+//      clearInterval(timer)
+//     }
+// }
+
+// document.getElementById("timer").innerHTML="1:00";
 
 })
