@@ -1,6 +1,14 @@
 # Naruto Memory Game
 In this game, you match pairs of cards until there are no more cards left. On the front of each card is Madara Uchiha, one of the most powerful of the Uchiha, can you beat him by finding all of the matches of Sasuke and Naruto?
 
+
+
+
+![WIreframe](https://user-images.githubusercontent.com/113128158/211104164-1313f2f4-168a-4827-8907-aed6d7f4cd70.PNG)
+
+
+
+
 ## Technologies Used
     - HTML
     - CSS
