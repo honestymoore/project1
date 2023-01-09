@@ -15,7 +15,7 @@ In this game, you match pairs of cards until there are no more cards left. On th
     - JavaScript
 
 ## Getting Started
-To play them game, you can click this link.
+To play them game, you can click this [link](https://honestymoore.github.io/project1/).
 
 Here are some guidelines before you start:
 Each card has one card that matches it, the board is made of 6 pairs, making it a 3x4 gameboard. To start, just click on one card and then click on another to see if they match! Good luck!
