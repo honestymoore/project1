@@ -29,4 +29,4 @@ Each card has one card that matches it, the board is made of 6 pairs, making it 
 
 ### Version 3: 
     - As a user I want to be able to have a start page
-    - As a user I want to be able to see card pairs left over
+    - As a user I want to be able to see alerts for each pair
