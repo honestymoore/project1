@@ -112,21 +112,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     //initialize
     createBoard()
-
-    //Timer
-//     var seconds = 60
-//     var timer
-//     function myFunction() {
-//     if(seconds < 60) {
-//         document.getElementById("timer").innerHTML = seconds
-//     }
-//     if (seconds >0 ) { //so it doesn't go to -1
-//         seconds--
-//     } else {
-//      clearInterval(timer)
-//     }
-// }
-
-// document.getElementById("timer").innerHTML="1:00";
-
 })
