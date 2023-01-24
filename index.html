@@ -14,22 +14,22 @@
 <h1>Naruto Memory Game!</h1>
 
 <h2>Score: <span id="result"</span></h2>
-
+<!-- line 16 ^ <span has no close, `>` to open tag-->
 
 <div class="grid"></div>
 
 <button type="button" onClick="window.location.reload();">Play Again</button>
-
+<!-- line 21, The attribute name of [ onClick ] must be in lowercase. + this is a bad solution to resetting the game and will do you NO favors in the future, it's just a fancy way of pressing the refresh button. We'll never be able to retain any data or make a full stack let alone single page application this way(tldr: we generally never want to refresh )  -->
 <h3>Thank you for playing!</h3>
 
-<footer>
+<footer> 
     Created by Honesty Moore
     <br>
     Project 1
     <br>
-    2023
+    2023 <!-- NO!!!!! T.T is it really 2023 already ?!-->
 </footer>
-
+<!-- i like that you put your name on it ! def add your lnkdn / prtfl links in the future  -->
 </body>
 
 </html>
