@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createBoard() {
         for (let i = 0; i < cardArray.length; i++) {
             const card = document.createElement('img')
-            card.setAttribute('src', 'images/frontcard.png')
+            card.setAttribute('src', '/home/honestymoore/sei/project/project1/public/images/frontcard.png')
             card.setAttribute('data-id', i)
             card.addEventListener('click', flipCard)
             grid.appendChild(card)
@@ -77,15 +77,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (cardsPicked[0] === cardsPicked[1]) {
 
-            cards[optionOneId].setAttribute('src', 'images/white.png')
-            cards[optionTwoId].setAttribute('src', 'images/white.png')
+            cards[optionOneId].setAttribute('src', '/home/honestymoore/sei/project/project1/public/images/white.png')
+            cards[optionTwoId].setAttribute('src', '/home/honestymoore/sei/project/project1/public/images/white.png')
             cards[optionOneId].removeEventListener('click', flipCard)
             cards[optionTwoId].removeEventListener('click', flipCard)
             cardsWon.push(cardsPicked)
 
         } else {
-            cards[optionOneId].setAttribute('src', 'images/frontcard.png')
-            cards[optionTwoId].setAttribute('src', 'images/frontcard.png')
+            cards[optionOneId].setAttribute('src', '/home/honestymoore/sei/project/project1/public/images/frontcard.png')
+            cards[optionTwoId].setAttribute('src', '/home/honestymoore/sei/project/project1/public/images/frontcard.png')
         }
 
         cardsPicked = []
