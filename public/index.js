@@ -3,51 +3,51 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardArray = [
         {
             name: 'naruto',
-            img: 'images/naruto.jpg'
+            img: '/home/honestymoore/sei/project/project1/public/images/naruto.jpg'
         },
         {
             name: 'kid naruto',
-            img: 'images/kidnaruto.webp'
+            img: '/home/honestymoore/sei/project/project1/public/images/kidnaruto.webp'
         },
         {
             name: 'sage naruto',
-            img: 'images/sagenaruto.webp'
+            img: '/home/honestymoore/sei/project/project1/public/images/sagenaruto.webp'
         },
         {
             name: 'sasuke',
-            img: 'images/sasuke.png'
+            img: '/home/honestymoore/sei/project/project1/public/images/sasuke.png'
         },
         {
             name: 'sasuke1',
-            img: 'images/sasuke1.jpeg'
+            img: '/home/honestymoore/sei/project/project1/public/images/sasuke1.jpeg'
         },
         {
             name: 'kid sasuke',
-            img: 'images/kidsasuke.jpg'
+            img: '/home/honestymoore/sei/project/project1/public/images/kidsasuke.jpg'
         },
         {
             name: 'naruto',
-            img: 'images/naruto.jpg'
+            img: '/home/honestymoore/sei/project/project1/public/images/naruto.jpg'
         },
         {
             name: 'kid naruto',
-            img: 'images/kidnaruto.webp'
+            img: '/home/honestymoore/sei/project/project1/public/images/kidnaruto.webp'
         },
         {
             name: 'sage naruto',
-            img: 'images/sagenaruto.webp'
+            img: '/home/honestymoore/sei/project/project1/public/images/sagenaruto.webp'
         },
         {
             name: 'sasuke',
-            img: 'images/sasuke.png'
+            img: '/home/honestymoore/sei/project/project1/public/images/sasuke.png'
         },
         {
             name: 'sasuke1',
-            img: 'images/sasuke1.jpeg'
+            img: '/home/honestymoore/sei/project/project1/public/images/sasuke1.jpeg'
         },
         {
             name: 'kid sasuke',
-            img: 'images/kidsasuke.jpg'
+            img: '/home/honestymoore/sei/project/project1/public/images/kidsasuke.jpg'
         }
     ]
 
