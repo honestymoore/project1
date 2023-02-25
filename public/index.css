@@ -4,60 +4,56 @@
     height: 300px;
     width: 400px;
     margin: 0 auto;
-    border: 10px solid rgb(170, 36, 36);
-    background-color: rgb(170, 36, 36);
-    
+    border: 10px solid rgb(245, 95, 19);
+    background-color: rgb(236, 138, 27);
 }
 h1 {
-    font-family: fantasy;
+    font-family: 'Bangers', cursive;
     text-align: center;
-    background-color: rgb(170, 36, 36);
+    background-color: rgb(236, 138, 27);
     word-spacing: 20px;
-    letter-spacing: 15px;
+    letter-spacing: 10px;
     margin-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
 }
 h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Bangers', cursive;
+    letter-spacing: 5px;
     margin-top: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
 }
 h3 {
-    background-color: rgb(170, 36, 36);
+    background-color: rgb(236, 138, 27);
+    font-family: 'Bangers', cursive;
+    word-spacing: 5px;
+    letter-spacing: 5px;
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
 }
 footer {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Bangers', cursive;
     text-align: center;
-    font-size: x-small;
+    font-size: medium;
 }
 button {
-    background-color: rgb(170, 36, 36);
+    background-color: rgb(236, 138, 27);
     font-size: x-large;
-    border: 8px solid rgb(170, 36, 36);
+    border: 8px solid rgb(236, 138, 27);
     border-radius: 8px;
     cursor: pointer;
     margin-top: 100px;
     margin-left: 20px;
 }
-.alert {
-    color:rgb(170, 36, 36);
-    background-color: black;
-    padding: 10px;
-    margin: 10px;
-
+#reload {
+    font-family: 'Bangers', cursive;
 }
-.closebtn {
-    margin-left: 15px;
-    color: white;
-    font-weight: bold;
-    float: right;
-    font-size: 22px;
-    line-height: 20px;
-    cursor: pointer;
-    transition: 0.3s;
+#logo {
+    text-align: center;
+    padding-top: 20px;
+}
+body {
+    background-color: whitesmoke;
 }
