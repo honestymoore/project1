@@ -1,0 +1,23 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "In this game, you match pairs of cards until there are no more cards left. On the front of each card is Madara Uchiha, one of the most powerful of the Uchiha, can you beat him by finding all of the matches of Sasuke and Naruto?",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/honestymoore/project1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/honestymoore/project1/issues"
+  },
+  "homepage": "https://github.com/honestymoore/project1#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

@@ -72,7 +72,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
-    
     function checkForMatch() {
         const cards = document.querySelectorAll('img')
         const optionOneId = cardsPickedId[0]
@@ -98,7 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
         resultDisplay.textContent = 'Well done, young shinobi!'
         } 
     } 
-   
    
     function flipCard() {
         const cardId = this.getAttribute('data-id')
