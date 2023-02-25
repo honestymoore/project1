@@ -3,51 +3,51 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardArray = [
         {
             name: 'naruto',
-            img: '/home/honestymoore/sei/project/project1/public/images/naruto.jpg'
+            img: 'public/images/naruto.jpg'
         },
         {
             name: 'kid naruto',
-            img: '/home/honestymoore/sei/project/project1/public/images/kidnaruto.webp'
+            img: 'public/images/kidnaruto.webp'
         },
         {
             name: 'sage naruto',
-            img: '/home/honestymoore/sei/project/project1/public/images/sagenaruto.webp'
+            img: 'public/images/sagenaruto.webp'
         },
         {
             name: 'sasuke',
-            img: '/home/honestymoore/sei/project/project1/public/images/sasuke.png'
+            img: 'public/images/sasuke.png'
         },
         {
             name: 'sasuke1',
-            img: '/home/honestymoore/sei/project/project1/public/images/sasuke1.jpeg'
+            img: 'public/images/sasuke1.jpeg'
         },
         {
             name: 'kid sasuke',
-            img: '/home/honestymoore/sei/project/project1/public/images/kidsasuke.jpg'
+            img: 'public/images/kidsasuke.jpg'
         },
         {
             name: 'naruto',
-            img: '/home/honestymoore/sei/project/project1/public/images/naruto.jpg'
+            img: 'public/images/naruto.jpg'
         },
         {
             name: 'kid naruto',
-            img: '/home/honestymoore/sei/project/project1/public/images/kidnaruto.webp'
+            img: 'public/images/kidnaruto.webp'
         },
         {
             name: 'sage naruto',
-            img: '/home/honestymoore/sei/project/project1/public/images/sagenaruto.webp'
+            img: 'public/images/sagenaruto.webp'
         },
         {
             name: 'sasuke',
-            img: '/home/honestymoore/sei/project/project1/public/images/sasuke.png'
+            img: 'public/images/sasuke.png'
         },
         {
             name: 'sasuke1',
-            img: '/home/honestymoore/sei/project/project1/public/images/sasuke1.jpeg'
+            img: 'public/images/sasuke1.jpeg'
         },
         {
             name: 'kid sasuke',
-            img: '/home/honestymoore/sei/project/project1/public/images/kidsasuke.jpg'
+            img: 'public/images/kidsasuke.jpg'
         }
     ]
 
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function createBoard() {
         for (let i = 0; i < cardArray.length; i++) {
             const card = document.createElement('img')
-            card.setAttribute('src', '/home/honestymoore/sei/project/project1/public/images/frontcard.png')
+            card.setAttribute('src', 'public/images/frontcard.png')
             card.setAttribute('data-id', i)
             card.addEventListener('click', flipCard)
             grid.appendChild(card)
@@ -77,15 +77,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (cardsPicked[0] === cardsPicked[1]) {
 
-            cards[optionOneId].setAttribute('src', '/home/honestymoore/sei/project/project1/public/images/white.png')
-            cards[optionTwoId].setAttribute('src', '/home/honestymoore/sei/project/project1/public/images/white.png')
+            cards[optionOneId].setAttribute('src', 'public/images/white.png')
+            cards[optionTwoId].setAttribute('src', 'public/images/white.png')
             cards[optionOneId].removeEventListener('click', flipCard)
             cards[optionTwoId].removeEventListener('click', flipCard)
             cardsWon.push(cardsPicked)
 
         } else {
-            cards[optionOneId].setAttribute('src', '/home/honestymoore/sei/project/project1/public/images/frontcard.png')
-            cards[optionTwoId].setAttribute('src', '/home/honestymoore/sei/project/project1/public/images/frontcard.png')
+            cards[optionOneId].setAttribute('src', 'public/images/frontcard.png')
+            cards[optionTwoId].setAttribute('src', 'public/images/frontcard.png')
         }
 
         cardsPicked = []
